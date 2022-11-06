@@ -3,7 +3,7 @@ import React from 'react'
 const Drawer = () => {
     const categories = ["business","entertainment","general","healths","cience","sports","technology"];
   return (
-    <div class="dropdown">
+    <div style={{visibility:"hidden"}} class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown button
     </button>
