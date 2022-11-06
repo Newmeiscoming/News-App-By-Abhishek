@@ -1,24 +1,24 @@
 
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Entertainment from './components/Entertainment';
-import General from './components/General';
-import Healths from './components/Healths';
+import Loginpage from './pages/Loginpage';
+import Mainpage from './pages/Mainpage';
 import Navbar from './components/Navbar';
-import Sceince from './components/Sceince';
-import Sports from './components/Sports';
-import Technology from './components/Technology';
+import Register from '../src/pages/Register';
+
 
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
-      <Entertainment/>
-      <General/>
-      <Technology/>
-      <Sports/>
-      <Healths/>
-      <Sceince/>
+      <Routes>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/' element={<Loginpage />}/>
+        <Route path='/news' element={<Mainpage/>}/>
+      </Routes>
+      
      
     </div>
   );
