@@ -19,7 +19,7 @@ const Loginpage = () => {
         let user = res.user;
         localStorage.setItem("name",user.displayName);
         alert(`Welcome ${user.displayName}`);
-        navigate("/news");
+        navigate("/");
     }).catch(err=>{
       setMessage(err.message);
     })
@@ -47,6 +47,7 @@ const Loginpage = () => {
             ()=>navigate("/register")
           }>Signup</p>
         </div>
+
       </form>
     </div>
 
