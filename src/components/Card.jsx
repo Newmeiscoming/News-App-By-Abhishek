@@ -2,6 +2,9 @@ import React from 'react'
 import "../components/Categories.css"
 
 const Card = ({data}) => {
+  if(data.urlToImage===null){
+    return;
+  }
   return (
     <div className='card-div'>
         <div className="image" >

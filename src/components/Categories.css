@@ -7,9 +7,19 @@
     align-items: center;
     margin-top: 20px;
     padding: 8px 16px 8px 8px;
+    
 }
 .info{
     text-align: left;
     padding-left: 15px;
+}
+.container-div{
+    display: flex;
+
+}
+.card-div:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+    transition: all 0.3s ease;
     
 }

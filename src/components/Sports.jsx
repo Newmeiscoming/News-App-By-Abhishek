@@ -10,7 +10,7 @@ const Sports = () => {
     },[])
     
   return (
-    <div>Hii</div>
+    <div></div>
   )
 }
 
