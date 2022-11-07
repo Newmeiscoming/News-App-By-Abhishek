@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: white;
 }
 .icon{
     flex: 0.48;

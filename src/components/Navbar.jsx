@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const navigate = useNavigate();
   function handleSignOut(){
-    navigate("/login");
+    navigate("/");
     localStorage.removeItem("name");
   }
   return (

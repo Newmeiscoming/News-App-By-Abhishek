@@ -23,7 +23,7 @@ const Register = () => {
             })
             localStorage.setItem("name",user.displayName);
             alert(`Welcome ${user.displayName}`);
-            navigate("/");
+            navigate("/feed");
         })
         .catch(err=>{
             setMessage(err.message);
@@ -52,7 +52,7 @@ const Register = () => {
       
       <input type="submit" value="Sign-Up"  />
       <div className="signup_link">
-        Already a member? <p onClick={()=>navigate("/login")} style={{textDecoration:"underline",cursor:"pointer"}}>Sign In</p>
+        Already a member? <p onClick={()=>navigate("/")} style={{textDecoration:"underline",cursor:"pointer"}}>Sign In</p>
       </div>
     </form>
   </div>

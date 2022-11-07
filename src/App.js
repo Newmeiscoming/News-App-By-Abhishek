@@ -15,8 +15,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/register' element={<Register/>}/>
-        <Route path='/login' element={<Loginpage />}/>
-        <Route path='/' element={<Mainpage/>}/>
+        <Route path='/' element={<Loginpage />}/>
+        <Route path='/feed' element={<Mainpage/>}/>
       </Routes>
       
      

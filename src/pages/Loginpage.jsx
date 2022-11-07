@@ -19,7 +19,7 @@ const Loginpage = () => {
         let user = res.user;
         localStorage.setItem("name",user.displayName);
         alert(`Welcome ${user.displayName}`);
-        navigate("/");
+        navigate("/feed");
     }).catch(err=>{
       setMessage(err.message);
     })
@@ -30,7 +30,7 @@ const Loginpage = () => {
       <h1>Login</h1>
       <form onSubmit={(e)=>{handleSubmit(e)}}>
         <div className="txt_field">
-          <input onChange={(e)=>setInput({...input,email:e.target.value})} type="text"  />
+          <input onChange={(e)=>setInput({...input,email:e.target.value})} type="text"git  />
           <span></span>
           <label>Email Address</label>
         </div>
