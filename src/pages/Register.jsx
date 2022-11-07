@@ -50,7 +50,7 @@ const Register = () => {
       </div>
       <p style={{color:"red"}}>{message}</p>
       
-      <input type="submit"  />
+      <input type="submit" value="Sign-Up"  />
       <div className="signup_link">
         Already a member? <p onClick={()=>navigate("/login")} style={{textDecoration:"underline",cursor:"pointer"}}>Sign In</p>
       </div>

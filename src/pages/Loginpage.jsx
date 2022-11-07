@@ -41,7 +41,7 @@ const Loginpage = () => {
         </div>
         <p style={{color:"red"}}>{message}</p>
         <div className="pass">Forgot Password?</div>
-        <input type="submit" />
+        <input type="submit" value="Sign-In"/>
         <div className="signup_link">
           Not a member? <p style={{textDecoration:"underline",cursor:"pointer"}} onClick={
             ()=>navigate("/register")
